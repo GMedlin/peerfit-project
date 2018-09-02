@@ -19,7 +19,7 @@ yoga
 
 5. At what time of day do most users book classes? Attend classes? (Morning = 7-11 AM, Afternoon = 12-4 PM, Evening = 5-10 PM)
 
-Most popular booked: Morning
+Most popular booked: Morning  
 Most popular attended: Morning (I'm going to assume they attended if they checked-in, regardless of whether it says they cancelled)
 
 6. How many confirmed completed reservations did the member (ID) with the most reserved classes in February have?
