@@ -39,7 +39,7 @@ booked_time_periods_count as (
 	from booked_time_periods
 	
 	group by booked_time_periods.booked_time_period
-),
+)
 
 select booked_time_periods_count.booked_time_period as most_popular_booked_time_period
 from booked_time_periods_count
