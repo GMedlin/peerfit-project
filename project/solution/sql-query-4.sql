@@ -85,4 +85,4 @@ cr_mb_completed_canceled_limit as (
 )
 
 select count(cr_mb_completed_canceled_limit.member_id) as answer_4
-from cr_mb_completed_canceled_limit
+from cr_mb_completed_canceled_limit;
