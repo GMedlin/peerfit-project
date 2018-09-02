@@ -11,4 +11,4 @@ sq1 as (
 )
 
 select count(id) as total_reserves
-from sq1
+from sq1;

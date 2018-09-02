@@ -16,4 +16,4 @@ select case
 		 when mindbody_abandoned > clubready_abandoned then 'mindbody' 
 		 else 'clubready' 
 		 end as most_abandoned
-from sq1, sq2
+from sq1, sq2;
