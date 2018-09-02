@@ -34,6 +34,14 @@ See peerfit-project/project/solution/sql-query-7.sql
 ### Project Discussion
 1. What opportunities do you see to improve data storage and standardization for these datasets?
 
+There are several opportunities for improvement if best practices were to be implemented. First, I would not have a separate table for each fitness studio and I would employ some normalization. A traditional RDB would have a single table that contains the member_class transactions. This table would consist of: member_id, viewed_datetime, reserved_datetime, canceled_datetime, class_datetime, checked_in_datetime, and foreign keys to the lookup tables. There would be a separate lookup table each for studio, class, and instructor information. I'm unclear on what the level field represents. If it represents floors in a building and each class could be on any floor, I may put it with the transactions/fact table. If classes are forever on the same floor, I'd put it in with the class info table.
+
+Another improvement would be making sure all fields from both tables are complete and contain the same fields. They both have fields that the other doesn't and mindbody has some nulls for the studio_key. Also, the canceled field should either be a t/f or datetime for both tables.
+
 2. What forecasting opportunities do you see with a dataset like this and why?
 
+The forecasting opportunities I see would operate off of trends for reservations, cancelations, and check-ins. You could forecast the future state of all of these metrics per studio, city, state, zip, and class_tag by using this historical information.
+
 3. What other data would you propose we gather to make reporting/forecasting more robust and why?
+
+I would propose gathering weather data to better forecast (haha) or predict how the weather impacts cancellations and check-ins. I would add in more instructor, member, and class data to determine which characteristics of all of these influence the reservations of members, so you could focus on adding more studios that have the most of these characteristics. It could also help determine if there's a larger market potential for certain classes or for certain member demographics. Figuring out the popularity of studios and classes per state or zip code would help to focus marketing. Additionally, it would be helpful to know the employers of the members at these studios, so you could see how successful Peerfit's partnership with these employers is.
