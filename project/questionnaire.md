@@ -45,3 +45,5 @@ The forecasting opportunities I see would operate off of trends for reservations
 3. What other data would you propose we gather to make reporting/forecasting more robust and why?
 
 I would propose gathering weather data to better forecast (haha) or predict how the weather impacts cancellations and check-ins. I would add in more instructor, member, and class data to determine which characteristics of all of these influence the reservations of members, so you could focus on adding more studios that have the most of these characteristics. It could also help determine if there's a larger market potential for certain classes or for certain member demographics. Figuring out the popularity of studios and classes per state or zip code would help to focus marketing. Additionally, it would be helpful to know the employers of the members at these studios, so you could see how successful Peerfit's partnership with these employers is.
+
+Oh, and it would be great to add calculated fields that you can use for seeing which classes members completed or abandoned. It would be quicker and easier to query for them rather than having to set criteria on multiple datetime fields.
